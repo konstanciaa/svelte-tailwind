@@ -10,27 +10,29 @@
                 "Every workout is new and exciting",
             ],
             description: "PowerFit ensures all users have the information they need to train safely and train effectively.",
-            imgUrl: "",
+            imgUrl: "assets/selection.png",
         },
         {
             featureList: [
-                "Daily streak counter",
-                "Weights and reps tracker",
-                "Community challenges",
-                "Every workout is new and exciting",
+                "Select your preferences",
+                "Personalize your workouts",
+                "Customize your training",
+                "Guarantees progress on all core exercises",
             ],
-            description: "PowerFit ensures all users have the information they need to train safely and train effectively.",
-            imgUrl: "",
+            description:
+                "Build you streaks and see your progress with our amazing tracking and analytics features.",
+            imgUrl: "assets/training.png",
         },
         {
             featureList: [
-                "Daily streak counter",
-                "Weights and reps tracker",
-                "Community challenges",
-                "Every workout is new and exciting",
+                "Eliminating guesswork",
+                "Save time",
+                "Achieve the performance you seek",
+                "Builds functional strength",
             ],
-            description: "PowerFit ensures all users have the information they need to train safely and train effectively.",
-            imgUrl: "",
+            description:
+                "Enter as much information about yourself as you desire to ensure all workouts are personalized to your every need.",
+            imgUrl: "assets/goal.png",
         }
     ]
 </script>
@@ -47,9 +49,15 @@
             {#each productFeatures as productFeature, index}
                 <ProductCard productFeature={productFeature} index={index}>
                     {#if index === 0}
-
+                    Experience a beginner exercise <span class="text-indigo-400
+                    font-medium">master</span> class
                     {:else if index === 1}
+                    Lay the foundations for <span class="text-indigo-400
+                    font-medium">routine</span> and consistency
                     {:else}
+                    Workouts specifiic to your <span class="text-indigo-400
+                    font-medium">environment</span> and <span class="text-indigo-400
+                    font-medium">expertise</span>
                     {/if}
                 </ProductCard>
             {/each}
